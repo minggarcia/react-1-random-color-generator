@@ -2,7 +2,7 @@ import randomColor from 'randomcolor';
 import { useState } from 'react';
 
 export default function Box() {
-  const [hex, setHex] = useState('#ffffff');
+  const [hex, setHex] = useState('#');
   const hexCode = randomColor();
 
   return (
@@ -12,14 +12,16 @@ export default function Box() {
           border: '3px solid black',
           padding: '50px',
           backgroundColor: hexCode,
+          margin: '50px',
         }}
       >
-        Generated Color: {hex}
+        Generated Color: {hexCode}
       </div>
       <div
         style={{
           textAlign: 'center',
           margin: '20px',
+          fontFamily: 'Verdana',
         }}
       >
         <button
