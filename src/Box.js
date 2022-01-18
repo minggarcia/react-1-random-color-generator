@@ -11,17 +11,16 @@ export default function Box() {
         style={{
           border: '3px solid black',
           padding: '50px',
-          backgroundColor: hexCode,
+          backgroundColor: hex,
           margin: '50px',
         }}
       >
-        Generated Color: {hexCode}
+        Generated Color: {hex}
       </div>
       <div
         style={{
           textAlign: 'center',
           margin: '20px',
-          fontFamily: 'Verdana',
         }}
       >
         <button
